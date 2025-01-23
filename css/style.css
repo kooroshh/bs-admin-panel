@@ -1,0 +1,15 @@
+#sidebar{
+    height: calc(100vh - 56px);
+}
+
+
+
+#sidebar .fa-arrow-down{
+    transform: rotate(0deg);
+    transition: 0.3s transform ease-in-out;
+}
+
+#sidebar .collapsed .fa-arrow-down{
+    transform: rotate(90deg);
+    transition: 0.3s transform ease-in-out;
+}
