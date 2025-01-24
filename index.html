@@ -13,13 +13,13 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md p-0">
+    <nav class="navbar navbar-expand-md p-0 sticky-top bg-white">
 
         <div class="d-flex align-items-center">
 
             <a href="#" class="navbar-brand bg-light m-0 py-3 px-5 h3">پنل مدیریت</a>
-            <span class="ms-3" style="font-size: 1.5rem;cursor: pointer;" data-bs-toggle="collapse" data-bs-target="#sidebar"><i
-                    class="fa-solid fa-bars"></i></span>
+            <span class="ms-3" style="font-size: 1.5rem;cursor: pointer;" data-bs-toggle="collapse"
+                data-bs-target="#sidebar"><i class="fa-solid fa-bars"></i></span>
 
         </div>
 
@@ -148,7 +148,340 @@
 
             </div>
 
-            <div class="col-12 col-md-10">
+            <div class="col-12 col-md-10 bg-light ms-md-auto p-md-4 pt-2">
+
+                <div class="row gap-4 flex-column flex-md-row px-2">
+
+                    <div class="card text-bg-success mb-3 mb-md-0 p-0 col">
+
+                        <div class="card-header">
+
+                            <h4 class="text-white">75200</h4>
+                            <small class="blockquote-footer card-text text-white m-0">تعداد اعضای ثبت نام کرده</small>
+
+                        </div>
+                        <div class="card-body">
+
+                            <canvas class="w-100 h-100" id=""></canvas>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card text-bg-primary mb-3 mb-md-0 p-0 col">
+
+                        <div class="card-header">
+
+                            <h4 class="text-white">22538</h4>
+                            <small class="blockquote-footer card-text text-white m-0">تعداد نظرات ثبت شده</small>
+
+                        </div>
+                        <div class="card-body">
+
+                            <!-- ChartJs -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="card text-bg-warning mb-3 mb-md-0 p-0 col">
+
+                        <div class="card-header">
+
+                            <h4 class="text-white">6000</h4>
+                            <small class="blockquote-footer card-text text-white m-0">محصولات خریداری شده</small>
+
+                        </div>
+                        <div class="card-body">
+
+                            <!-- ChartJs -->
+
+                        </div>
+
+                    </div>
+
+                    <div class="card text-bg-dark text-white mb-3 mb-md-0 p-0 col">
+
+                        <div class="card-header">
+
+                            <h4 class="text-white">15580</h4>
+                            <small class="blockquote-footer card-text text-white m-0">نظرات تایید شده</small>
+
+                        </div>
+                        <div class="card-body">
+
+                            <!-- ChartJs -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="d-flex justify-content-between align-items-center flex-wrap flex-md-nowrap border-bottom pb-2 my-3">
+
+                    <h1 class="h2">داشبورد</h1>
+                    <div>
+                        <div class="btn-toolbar">
+
+                            <div class="btn-group">
+
+                                <button class="btn btn-sm btn-outline-secondary">اشتراک گذاری</button>
+                                <button class="btn btn-sm btn-outline-secondary">خروجی گرفتن</button>
+
+                            </div>
+                            <button class="btn btn-outline-secondary btn-sm ms-2 dropdown-toggle">این هفته</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card-header">
+                        <h5>آمار بازدید</h5>
+                    </div>
+                    <div class="card-body">
+
+                        <!-- ChartJs -->
+
+                    </div>
+                    <div class="card-footer">
+
+                        <div class="row gap-4 flex-column flex-md-row px-md-0 px-2">
+
+                            <div class="text-center col">
+
+                                <h5 class="text-dark-emphasis">همه بازدید ها</h5>
+                                <p class="text-secondary"><strong>25680 بازدید (40%)</strong></p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" style="width: 40%;"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="text-center col">
+
+                                <h5 class="text-dark-emphasis">بازدید های یکتا</h5>
+                                <p class="text-secondary"><strong>15640 بازدید (25%)</strong></p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" style="width: 25%;"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="text-center col">
+
+                                <h5 class="text-dark-emphasis">صفحات بازدید شده</h5>
+                                <p class="text-secondary"><strong>79500 بازدید (80%)</strong></p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width: 80%;"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="text-center col">
+
+                                <h5 class="text-dark-emphasis">نرخ پرش</h5>
+                                <p class="text-secondary"><strong>36400 بازدید (43%)</strong></p>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" style="width: 43%;"></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-column border-bottom pb-2 my-4">
+
+                    <h2 class="h3">آخرین مقالات</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+
+                            <thead class="table-secondary">
+                                <tr>
+
+                                    <th>عنوان مقاله</th>
+                                    <th>تعداد نظرات</th>
+                                    <th>مقدار بازدید</th>
+                                    <th>تنظیمات</th>
+                                
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+
+                                    <td>چه زمانی مشتری خیلی دور شده است؟</td>
+                                    <td>0</td>
+                                    <td>30</td>
+                                    <td>
+                                        <div class="btn-group">
+
+                                            <button class="btn btn-sm btn-primary">ویرایش</button>
+                                            <button class="btn btn-sm btn-danger">حذف</button>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>چه زمانی مشتری خیلی دور شده است؟</td>
+                                    <td>0</td>
+                                    <td>30</td>
+                                    <td>
+                                        <div class="btn-group">
+
+                                            <button class="btn btn-sm btn-primary">ویرایش</button>
+                                            <button class="btn btn-sm btn-danger">حذف</button>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>چه زمانی مشتری خیلی دور شده است؟</td>
+                                    <td>0</td>
+                                    <td>30</td>
+                                    <td>
+                                        <div class="btn-group">
+
+                                            <button class="btn btn-sm btn-primary">ویرایش</button>
+                                            <button class="btn btn-sm btn-danger">حذف</button>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>چه زمانی مشتری خیلی دور شده است؟</td>
+                                    <td>0</td>
+                                    <td>30</td>
+                                    <td>
+                                        <div class="btn-group">
+
+                                            <button class="btn btn-sm btn-primary">ویرایش</button>
+                                            <button class="btn btn-sm btn-danger">حذف</button>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>چه زمانی مشتری خیلی دور شده است؟</td>
+                                    <td>0</td>
+                                    <td>30</td>
+                                    <td>
+                                        <div class="btn-group">
+
+                                            <button class="btn btn-sm btn-primary">ویرایش</button>
+                                            <button class="btn btn-sm btn-danger">حذف</button>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>چه زمانی مشتری خیلی دور شده است؟</td>
+                                    <td>0</td>
+                                    <td>30</td>
+                                    <td>
+                                        <div class="btn-group">
+
+                                            <button class="btn btn-sm btn-primary">ویرایش</button>
+                                            <button class="btn btn-sm btn-danger">حذف</button>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>چه زمانی مشتری خیلی دور شده است؟</td>
+                                    <td>0</td>
+                                    <td>30</td>
+                                    <td>
+                                        <div class="btn-group">
+
+                                            <button class="btn btn-sm btn-primary">ویرایش</button>
+                                            <button class="btn btn-sm btn-danger">حذف</button>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>چه زمانی مشتری خیلی دور شده است؟</td>
+                                    <td>0</td>
+                                    <td>30</td>
+                                    <td>
+                                        <div class="btn-group">
+
+                                            <button class="btn btn-sm btn-primary">ویرایش</button>
+                                            <button class="btn btn-sm btn-danger">حذف</button>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>چه زمانی مشتری خیلی دور شده است؟</td>
+                                    <td>0</td>
+                                    <td>30</td>
+                                    <td>
+                                        <div class="btn-group">
+
+                                            <button class="btn btn-sm btn-primary">ویرایش</button>
+                                            <button class="btn btn-sm btn-danger">حذف</button>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>چه زمانی مشتری خیلی دور شده است؟</td>
+                                    <td>0</td>
+                                    <td>30</td>
+                                    <td>
+                                        <div class="btn-group">
+
+                                            <button class="btn btn-sm btn-primary">ویرایش</button>
+                                            <button class="btn btn-sm btn-danger">حذف</button>
+
+                                        </div>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -160,6 +493,8 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/bootstrap.esm.min.js"></script>
     <script src="https://kit.fontawesome.com/a042016f44.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
