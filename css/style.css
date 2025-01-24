@@ -1,15 +1,42 @@
+
+
 #sidebar{
-    height: calc(100vh - 56px);
+    height: 100%;
 }
 
+#sidebar.collapsing{
+    height: 0;
+}
 
+@media (min-width: 768px) {
+  
+    #sidebar{
+        min-height: calc(100vh - 56px);
+        transition: transform 0.5s linear;
+        position: fixed;
+    }
+
+    
+    #sidebar.collapse.show{
+        transform: translate(0% , 0);
+    }
+
+    #sidebar.collapsing{
+        transform: translate(100% , 0);
+    }
+
+    #sidebar.collapse{
+        transform: translate(100% , 0);
+    }
+    
+}
 
 #sidebar .fa-arrow-down{
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(0.8);
     transition: 0.3s transform ease-in-out;
 }
 
 #sidebar .collapsed .fa-arrow-down{
-    transform: rotate(90deg);
+    transform: rotate(90deg) scale(0.8);
     transition: 0.3s transform ease-in-out;
 }

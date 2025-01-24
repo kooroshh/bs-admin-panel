@@ -18,7 +18,8 @@
         <div class="d-flex align-items-center">
 
             <a href="#" class="navbar-brand bg-light m-0 py-3 px-5 h3">پنل مدیریت</a>
-            <span class="ms-3" style="font-size: 1.5rem;"><i class="fa-solid fa-bars"></i></span>
+            <span class="ms-3" style="font-size: 1.5rem;cursor: pointer;" data-bs-toggle="collapse" data-bs-target="#sidebar"><i
+                    class="fa-solid fa-bars"></i></span>
 
         </div>
 
@@ -50,104 +51,108 @@
 
     </nav>
 
-    <div class="container-fluid row">
+    <div class="container-fluid">
+        <div class="row">
 
-        <div class="col-12 col-md-2 bg-dark text-white" id="sidebar">
+            <div class="col-12 col-md-2 bg-dark text-white collapse show" id="sidebar">
 
-            <div class="py-3 ms-2">منوی اصلی</div>
-            <ul class="nav flex-column ms-3">
+                <div class="py-3 ms-2">منوی اصلی</div>
+                <ul class="nav flex-column ms-3">
 
-                <li class="nav-item d-flex align-items-center">
+                    <li class="nav-item d-flex align-items-center">
 
-                    <i class="fa-solid fa-paperclip"></i>
-                    <a href="#" class="nav-link my-1 text-white">داشبورد</a>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <a href="#" class="nav-link my-1 text-white">داشبورد</a>
 
-                </li>
+                    </li>
 
-                <li class="nav-item">
+                    <li class="nav-item">
 
-                    <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center">
 
-                        <i class="fa-solid fa-book"></i>
-                        <a href="#submenu1"
-                            class="nav-link w-100 d-flex justify-content-between align-items-center my-1 text-white collapsed"
-                            data-bs-toggle="collapse">
-                            مقالات
-                            <i class="fa-solid fa-arrow-down"></i>
-                        </a>
+                            <i class="fa-solid fa-book"></i>
+                            <a href="#submenu1"
+                                class="nav-link w-100 d-flex justify-content-between align-items-center my-1 text-white collapsed"
+                                data-bs-toggle="collapse">
+                                مقالات
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </a>
 
-                    </div>
-                    <div class="collapse" id="submenu1">
-                        <ul class="nav flex-column ms-3">
+                        </div>
+                        <div class="collapse" id="submenu1">
+                            <ul class="nav flex-column ms-3">
 
-                            <li class="nav-item"><a href="#" class="nav-link text-white my-1">مشاهده همه</a></li>
-                            <li class="nav-item">
+                                <li class="nav-item"><a href="#" class="nav-link text-white my-1">مشاهده همه</a></li>
+                                <li class="nav-item">
 
-                                <a href="#submenu1sub1"
-                                    class="nav-link w-100 d-flex justify-content-between align-items-center my-1 text-white collapsed"
-                                    data-bs-toggle="collapse">
-                                    ارسال مقاله
-                                    <i class="fa-solid fa-arrow-down"></i>
-                                </a>
+                                    <a href="#submenu1sub1"
+                                        class="nav-link w-100 d-flex justify-content-between align-items-center my-1 text-white collapsed"
+                                        data-bs-toggle="collapse">
+                                        ارسال مقاله
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </a>
 
-                                <div class="collapse" id="submenu1sub1">
-                                    <ul class="nav flex-column ms-4">
+                                    <div class="collapse" id="submenu1sub1">
+                                        <ul class="nav flex-column ms-4">
 
-                                        <li class="nav-item"><a href="#" class="nav-link text-white my-1">مقاله کوتاه</a>
-                                        </li>
-                                        <li class="nav-item"><a href="#" class="nav-link text-white my-1">مقاله بلند</a></li>
+                                            <li class="nav-item"><a href="#" class="nav-link text-white my-1">مقاله
+                                                    کوتاه</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-link text-white my-1">مقاله
+                                                    بلند</a></li>
 
-                                    </ul>
-                                </div>
+                                        </ul>
+                                    </div>
 
 
-                            </li>
+                                </li>
 
-                        </ul>
-                    </div>
+                            </ul>
+                        </div>
 
-                </li>
+                    </li>
 
-                <li class="nav-item d-flex align-items-center">
+                    <li class="nav-item d-flex align-items-center">
 
-                    <i class="fa-solid fa-video"></i>
-                    <a href="#" class="nav-link my-1 text-white">دوره ها</a>
+                        <i class="fa-solid fa-video"></i>
+                        <a href="#" class="nav-link my-1 text-white">دوره ها</a>
 
-                </li>
+                    </li>
 
-            </ul>
-            <div class="py-3 ms-2">متفرقه</div>
-            <ul class="nav flex-column ms-3">
+                </ul>
+                <div class="py-3 ms-2">متفرقه</div>
+                <ul class="nav flex-column ms-3">
 
-                <li class="nav-item d-flex align-items-center">
+                    <li class="nav-item d-flex align-items-center">
 
-                    <i class="fa-solid fa-user"></i>
-                    <a href="#" class="nav-link my-1 text-white">اعضا</a>
+                        <i class="fa-solid fa-user"></i>
+                        <a href="#" class="nav-link my-1 text-white">اعضا</a>
 
-                </li>
+                    </li>
 
-                <li class="nav-item d-flex align-items-center">
+                    <li class="nav-item d-flex align-items-center">
 
-                    <i class="fa-solid fa-comment"></i>
-                    <a href="#" class="nav-link my-1 text-white">نظرات</a>
+                        <i class="fa-solid fa-comment"></i>
+                        <a href="#" class="nav-link my-1 text-white">نظرات</a>
 
-                </li>
+                    </li>
 
-                <li class="nav-item d-flex align-items-center">
+                    <li class="nav-item d-flex align-items-center">
 
-                    <i class="fa-solid fa-gear"></i>
-                    <a href="#" class="nav-link my-1 text-white">تنظیمات</a>
+                        <i class="fa-solid fa-gear"></i>
+                        <a href="#" class="nav-link my-1 text-white">تنظیمات</a>
 
-                </li>
+                    </li>
 
-            </ul>
+                </ul>
+
+            </div>
+
+            <div class="col-12 col-md-10">
+
+            </div>
 
         </div>
-
-        <div class="col-12 col-md-10">
-
-        </div>
-
     </div>
 
 
