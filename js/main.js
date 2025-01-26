@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let ActiveCommentUser = document.getElementById("acomment-user");
     let View = document.getElementById("view");
 
-    
-
     let RegisterUserChart = new Chart(RegisterUser, {
         type: 'line',
         data: {
@@ -23,15 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }]
         },
         options: {
+            responsive: true,
+            maintainAspectRatio: false,
             plugins: {
                 legend: {
                     display: false
-                }
-            },
-            layout: {
-                padding: {
-                    left: 5,
-                    right: 5
                 }
             },
             scales: {
@@ -77,6 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }]
         },
         options: {
+            responsive: true,
+            maintainAspectRatio: false,
             plugins: {
                 legend: {
                     display: false
@@ -121,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
         data: {
             labels: ['1', '2', '3', '4', '5', '6'],
             datasets: [{
-                data: [15200, 13400, 16700, 0, 12900, 17100],
+                data: [10000, 15200, 22345, 12300, 9600, 17900],
                 fill: false,
                 backgroundColor: "transparent",
                 borderColor: '#fff',
@@ -131,15 +127,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }]
         },
         options: {
+            responsive: true,
+            maintainAspectRatio: false,
             plugins: {
                 legend: {
                     display: false
-                }
-            },
-            layout: {
-                padding: {
-                    left: 5,
-                    right: 5
                 }
             },
             scales: {
@@ -185,6 +177,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }]
         },
         options: {
+            responsive: true,
+            maintainAspectRatio: false,
             plugins: {
                 legend: {
                     display: false
@@ -224,12 +218,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+
     let ViewChart = new Chart(View, {
         type: 'line',
         data: {
             labels: ['شنبه', 'یکشنبه', 'دوشنبه', 'سه شنبه', 'چهارشنبه', 'پنجشنبه', "جمعه"],
             datasets: [{
-                data: [15200, 13400, 16700, 0, 12900, 17100, 10000],
+                data: [15200, 13400, 16700, 11200, 12900, 17100, 10000],
                 fill: true,
                 backgroundColor: "rgba(0, 0, 0, 0.4)",
                 borderColor: '#555',
@@ -239,6 +234,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }]
         },
         options: {
+            responsive: true,
+            maintainAspectRatio: false,
             plugins: {
                 legend: {
                     display: false
@@ -246,6 +243,36 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         }
     });
+
+
+
+    let SidebarCollapse = new bootstrap.Collapse(document.getElementById('sidebar'), {
+        toggle: false
+    });
+
+
+
+    function resize() {
+        if (window.innerWidth <= 768) {
+            SidebarCollapse.hide();
+        } else {
+            SidebarCollapse.show();
+        }
+    }
+    window.addEventListener("resize", resize);
+
+    document.getElementById("sidebar").addEventListener('hide.bs.collapse', function (e) {
+        if (e.target == this) {
+            document.getElementById("main").classList.remove("col-md-10");
+        }
+    })
+
+    document.getElementById("sidebar").addEventListener('show.bs.collapse', function (e) {
+        if (e.target == this) {
+            document.getElementById("main").classList.add("col-md-10");
+        }
+    })
+
 
 
 

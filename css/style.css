@@ -1,6 +1,7 @@
 
 body{
     color: #5a5a5a;
+    height: 100%;
 }
 h1,h2,h3,h4,h5,h6{
     color: #5a5a5a;
@@ -39,10 +40,14 @@ h1,h2,h3,h4,h5,h6{
 
 #sidebar .fa-arrow-down{
     transform: rotate(0deg) scale(0.8);
-    transition: 0.3s transform ease-in-out;
+    transition: 0.5s transform ease-in-out;
 }
 
 #sidebar .collapsed .fa-arrow-down{
     transform: rotate(90deg) scale(0.8);
-    transition: 0.3s transform ease-in-out;
+    transition: 0.5s transform ease-in-out;
+}
+
+#main{
+    transition: 1s all;
 }
