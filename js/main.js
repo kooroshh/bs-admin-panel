@@ -251,7 +251,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-
     function resize() {
         if (window.innerWidth <= 768) {
             SidebarCollapse.hide();
@@ -259,6 +258,10 @@ document.addEventListener("DOMContentLoaded", function () {
             SidebarCollapse.show();
         }
     }
+
+    resize();
+
+
     window.addEventListener("resize", resize);
 
     document.getElementById("sidebar").addEventListener('hide.bs.collapse', function (e) {
